@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* 한글 */
+@import url(https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css);
+/* font family : 'SUITE' */
+
+
+/* 영문 */
+/* @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&display=swap);
+/* font-family : Montserrat */
+
+/* 아이콘 */
+@import url(https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css);

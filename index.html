@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hapi cafe</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script src="./js/swiper.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- ScrollTrigger 플러그인 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="container">
+            <h1><a href="index.html"><span class="blind">HAPI CAFE</span></a></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/team">Experts</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/health">Concept</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/store">Stores</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/hapi-alliances">HAPI Alliance</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/membership">Membership</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/media">Media</a></li>
+                    <li><a href="https://www.hapicafes.com/ko/contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main-visual-wrap">
+            <video id="bgVideo" autoplay muted playsinline></video>
+            <div class="title-box">
+                <img src="./img/main.jpg" alt="#">
+                <div class="half-img">
+                    <img src="./img/main.jpg" alt="#">
+                </div>
+                <h2>Welcome to<br><strong>HAPI CAFE</strong></h2>
+            </div> 
+        </div>
+        <swiper-container class="section1" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide class="page1">
+                <div class="text-box">
+                    <h3>HEALTH</h3>
+                    <p>맛과 영양의 완벽한 조화, HAPI CAFE에서 한 입마다 건강을 느껴보세요.</p>
+                    <button onclick="location.href='about.html'">Learn More</button>
+                </div>
+                <img src="./img/health.jpg" alt="#">
+            </swiper-slide>
+            <swiper-slide class="page2">
+                <div class="text-box">
+                    <h3>WEALTH</h3>
+                    <p>Hapi Wealth Builder와 함께 더 큰 기회로 당신의 재정 미래를 키우세요.</p>
+                    <button onclick="location.href='https://www.hapicafes.com/ko/wealth'">Learn More</button>
+                </div>
+                <img src="./img/wealth.jpg" alt="#">
+            </swiper-slide>
+            <swiper-slide class="page3">
+                <div class="text-box">
+                    <h3>HAPPINESS</h3>
+                    <p>Hapi Travel의 맞춤 여행과 전용 혜택으로 특별한 세상을 경험하세요.</p>
+                    <button onclick="location.href='https://www.hapicafes.com/ko/happiness'">Learn More</button>
+                </div>
+                <img src="./img/happiness.jpg" alt="#">
+            </swiper-slide>
+            <swiper-slide class="page4">
+                <div class="text-box">
+                    <h3>MARKETPLACE</h3>
+                    <p>프리미엄 제품을 도매 가격으로, Hapi Marketplace에서 더 큰 가치를 만나세요.</p>
+                    <button onclick="location.href='https://www.hapicafes.com/ko/marketplace'">Learn More</button>
+                </div>
+                <img src="./img/marketplace.jfif" alt="#">
+            </swiper-slide>
+        </swiper-container>
+        <div class="section2">
+            <div class="img-wrap">
+                <img src="./img/section2.jpg" alt="https://www.hapicafes.com/ko/about">
+                <h2>
+                    <span class="overlap">About More Than</span><br>
+                    <span class="outside">Food and Place</span>
+                </h2>
+            </div>
+            <p>HAPI CAFE는 건강, 부, 행복을 아우르는 라이프스타일 공간입니다.<br>영양 가득한 식사와 더불어, 교육·여행·마켓플레이스를 연결하여<br>풍요로운 삶을 함께 만들어갑니다.</p>
+        </div>
+        <div class="section3">
+            <div class="production">
+                <h3>HAPI SIP</h3>
+                <img src="./img/sip2.png" alt="#">
+                <p>매일 아침, 단 한 모금으로 기분 UP! 당신만의 Hapi Sip을 만나보세요</p>
+                <button onclick="">shop</button>
+            </div>
+            <div class="production">
+                <h3>HAPI POUR</h3>
+                <img src="./img/pour2.png" alt="#">
+                <p>따뜻함을 부어주는 순간, 집안 가득 행복 충전! Hapi Pour로 완벽한 티타임을 즐겨보세요</p>
+                <button>shop</button>
+            </div>
+            <div class="production">
+                <h3>HAPI GO</h3>
+                <img src="./img/go2.png" alt="">
+                <p>밖에서도 행복은 계속! Hapi Go와 함께라면 어디서든 완벽한 하루를 만들 수 있어요</p>
+                <button>shop</button>
+            </div>
+        </div>
+        <div class="section4">
+            <h2>OUR OWN SPACE</h2>
+            <div class="ex-box">
+                <div class="ex-content">
+                    <p>HAPI Café는 아시아와 전 세계로 확장 중인 라이프스타일 공간입니다.<br>먹고, 배우고, 즐기며 함께 성장하는 경험을 제공합니다.</p>
+                    <button onclick="location.href='https://www.hapicafes.com/ko/store'">discover</button>
+                </div class="ex-content">
+                <img src="./img/section4.jpg" alt="">
+            </div>
+        </div>
+        <div class="section5">
+            <div class="all-box">
+                <h2>Join The Alliance</h2>
+                <p>HAPI Café는 Hapi Alliance와 함께 전 세계로 확장하며, 독창적인 브랜드 경험을 만들어갑니다. 함께할 파트너를 기다립니다.</p>
+                <button onclick="location.href='https://www.hapicafes.com/ko/hapi-alliances'">view detail</button>
+            </div>
+        </div>
+        <div class="section6">
+            <img src="./img/section6.jpg" alt="">
+            <div class="coop-content">
+                <h2><strong>COOPERATION</strong><br>with Hapi Cafe</h2>
+                <p>여행은 단순한 계획 그 이상입니다. Hapi Trip과 함께라면 Hapi Café에서 가상현실로 여행지를 미리 경험하고, 나만의 특별한 여정을 디자인할 수 있습니다</p>
+                <button onclick="location.href='https://www.hapicafes.com/ko/hapi-alliances'">Join Us</button>
+            </div>
+        </div>
+        <div class="section7">
+            <h2>Membership</h2>
+            <div class="mem-content">
+                <img src="./img/membership.png" alt="">
+                <div class="detail-content">
+                    <strong>Welcome Digital Gift</strong>
+                    <p>매달 25달러 바우처 제공</p>
+                    <p>최소 결제 금액 제한 없음</p>
+                    <p>특별 할인 상품</p>
+                    <p>AI 개인 쇼핑 도우미</p>
+                    <button onclick="location.href='https://www.hapicafes.com/ko/membership'">Get your card <i class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+            <h3>COMPANY</h3>
+            <ul>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3>MORE</h3>
+            <ul>
+                <li><a href="#">Brew Guides</a></li>
+                <li><a href="#">Virtual Classes</a></li>
+                <li><a href="#">Our Brand</a></li>
+                <li><a href="#">Our Coffee</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Find Hapi Cafes In Store</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column subscribe">
+            <h3>SUBSCRIBE AND STAY UPDATED</h3>
+            <p>
+                Join our email newsletter for exclusive offers,<br>
+                HAPI CAFE updates, events, and early access to our latest releases.<br>
+                Plus, enjoy complimentary shipping on your first order when you sign up.
+            </p>
+            <form>
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">→</button>
+            </form>
+            <div class="sns">
+                <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./img/twiter.png" alt="Twitter"></a>
+                <a href="#"><img src="./img/youtube.png" alt="YouTube"></a>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+            <a href="#">TERMS OF USE</a>
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">NOTICE AT COLLECTION</a>
+            <a href="#">YOUR PRIVACY CHOICES</a>
+            </div>
+            <p>©2025 by HAPICAFE INC</p>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

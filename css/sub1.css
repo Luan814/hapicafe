@@ -1,0 +1,443 @@
+html {
+  font-size: 10px;
+  --main: #2C3B2C;
+  --sub: #332E1F;
+  --sub2:  #647968;
+  --bg: #95AC96;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', 'SUITE', 'Pretendard', '맑은 고딕', sans-serif;
+  position: relative;
+  height: 100%;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  background-image: url(../img/bg1.png);
+  color: #fff;
+}
+
+.blind {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+h1 {
+    display: block;
+    width: 20rem;
+    height: 5rem;
+    background: url(../img/logo_white.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    z-index: 1;
+    margin: 40px 80px;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/about1.jpg) no-repeat;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 strong {
+    font-size: 5rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.section1 p {
+    font-size: 3rem;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+.section2 {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .ex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin: 30rem 0rem;
+}
+
+.section2 .ex-box h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.section2 .ex-box p {
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.section2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    transition: transform 0.3s ease-out; /* 부드러운 변화를 위해 */
+    display: block;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+.section3 {
+    padding: 0px 120px;
+}
+
+.section3 .hwhm-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section3 .hwhm-box img {
+    object-fit: cover;
+    width: 50rem;
+    height: 65rem;
+    z-index: 2;
+}
+
+.section3 .text-box {
+    position: relative;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    z-index: 1;
+}
+
+.section3 .text-box::before {
+    content: "";
+    position: absolute; 
+    top: 50%;
+    left: -500px;
+    transform: translateY(-50%);
+    width: calc(100% + 800px);
+    height: 300px; 
+    background: white;
+    z-index: -1;
+}
+
+.section3 .text-box h3 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.section3 .text-box p {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.section3 .text-box2 {
+    position: relative;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4rem;
+    z-index: 1;
+}
+
+.section3 .text-box2::before {
+    content: "";
+    position: absolute; 
+    top: 50%;
+    right: -400px;
+    transform: translateY(-50%);
+    width: calc(100% + 800px);
+    height: 300px; 
+    background: white;
+    z-index: -1;
+}
+
+.section3 .text-box2 h3 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.section3 .text-box2 p {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-align: end;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url(../img/about4.jfif) no-repeat center center;
+    background-size: cover;
+    
+}
+
+.section4 p {
+    text-align: center;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+.section4 button {
+    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.section4 button:hover {
+    font-size: 2.7rem;
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+.footer {
+  background: var(--sub);
+  color: var(--bg);
+  width: 100%;
+  height: 500px;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #555;
+  padding-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 40px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.subscribe p {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.subscribe form {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #666;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.subscribe input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 8px;
+  outline: none;
+}
+
+.subscribe button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sns a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sns img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.sns img:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    height: 700px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-column h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul li a {
+    font-size: 13px;
+  }
+
+  .subscribe p {
+    font-size: 12px;
+  }
+
+  .subscribe form {
+    width: 100%;
+  }
+
+  .subscribe input {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .subscribe button {
+    font-size: 18px;
+  }
+
+  .sns {
+    margin-top: 15px;
+  }
+
+  .sns img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
